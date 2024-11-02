@@ -1,0 +1,633 @@
+﻿@{
+    Layout = "~/Views/Shared/_MasterLayout.cshtml";
+}
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="~/Content/main.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="~/Scripts/fahasa/main.js"></script>
+    <title>
+        Fahasa.com - Nhà sách trực tuyến hàng đầu Việt Nam - FAHASA.COM
+    </title>
+</head>
+<body>
+    <div class="content">
+        <!--******************** PHẦN QUẢNG CÁO ********************-->
+        <div>
+            <div class="qc1">
+                <div class="qc-left">
+                    <img src="~/Content/image/qc1.png" />
+                </div>
+                <div class="qc2-3">
+                    <img src="~/Content/image/qc2.png" />
+                    <img src="~/Content/image/qc3.png" />
+                </div>
+            </div>
+            <div class="qc4-7">
+                <img src="~/Content/image/qc4.png" />
+                <img src="~/Content/image/qc5.png" />
+                <img src="~/Content/image/qc6.png" />
+                <img src="~/Content/image/qc7.png" />
+            </div>
+        </div>
+
+        <!--******************** PHẦN DANH MỤC ********************-->
+        <div class="danhmuc">
+            <div class="item">
+                <img src="~/Content/image/IconDoaHong.png" alt="Đoá Hồng Trí Đoá Hồng Trí Thức" />
+                <span>Đoá Hồng Trí Thức</span>
+            </div>
+            <div class="item">
+                <img src="~/Content/image/Logo MCBooks.png" alt="MCBooks" />
+                <br />
+                <a href="~/Category/mcbooks"><span>MCBooks</span></a>
+            </div>
+            <div class="item">
+                <img src="~/Content/image/Icon_KinhTe.png" alt="Kinh Tế" />
+                <br />
+                <a href="~/Category/kinhte"><span>Kinh Tế</span></a>
+            </div>
+            <div class="item">
+                <img src="~/Content/image/Icon_GiamGia.png" alt="Sản Phẩm Được Trợ Giá" />
+                <br />
+                <a href="~/Category/spduoctrogia"><span>Sản Phẩm Được Trợ Giá</span></a>
+            </div>
+            <div class="item">
+                <img src="~/Content/image/icon_Mannga.png" alt="Manga" />
+                <br />
+                <a href="~/Category/manga"><span>Manga</span></a>
+            </div>
+            <div class="item">
+                <img src="~/Content/image/Icon_FlashSale.png" alt="Flash Sale" />
+                <br />
+                <span>Flash Sale</span>
+            </div>
+            <div class="item">
+                <img src="~/Content/image/Icon_MaGiamGia.png" alt="Mã Giảm Giá" />
+                <br />
+                <span>Mã Giảm Giá</span>
+            </div>
+            <div class="item">
+                <img src="~/Content/image/Icon_NgoaiVan.png" alt="Ngoại Văn" />
+                <br />
+                <span>Ngoại Văn</span>
+            </div>
+            <div class="item">
+                <img src="~/Content/image/ChoDoCu.png" alt="Phiên Chợ Sách Cũ" />
+                <br />
+                <span>Phiên Chợ Sách Cũ</span>
+            </div>
+            <div class="item">
+                <img src="~/Content/image/Icon_SanPhamMoi.png" alt="Sản Phẩm Mới" />
+                <br />
+                <span>Sản Phẩm Mới</span>
+            </div>
+        </div>
+        <!--******************** PHẦN FLASH SALE ********************-->
+        <div class="nentrangFLASHSALE">
+            <div class="flashsale-content">
+                <div class="phandau">
+                    <span id="countdown" class="countdown">
+                        FLASH SALE Bắt đầu trong 00:00:00
+                        <span id="doimau" style="float:right">Xem tất cả > </span>
+                    </span>
+                </div>
+                <div class="container">
+                    <div class="books">
+                        <div class="book">
+                            <div class="img-cart">
+                                <img src="~/Content/image/gachiakuta.png" alt="Sách 1">
+                            </div>
+                            <div>
+                                <h3 class="book-title">
+                                    <a style="text-decoration: none" href="~/Product/productBook1">Gachiakuta - Tập 1</a>
+                                </h3>
+                            </div>
+                            <div class="price">
+                                41.850 đ
+                                <span class="discount">-16%</span>
+                            </div>
+                            <div class="old-price">
+                                45.000
+                            </div>
+                        </div>
+
+                        <div class="book">
+                            <div class="img-cart">
+                                <img src="~/Content/image/tamly.png" alt="Sách 2">
+                            </div>
+                            <div>
+                                <h3 class="book-title">
+                                    <a style="text-decoration: none" href="~/Product/productBook2">Những Quy Luật Của Bản Chất Con Người</a>
+                                </h3>
+                            </div>
+                            <div class="price">
+                                240.000 đ
+                                <span class="discount">-16%</span>
+                            </div>
+                            <div class="old-price">
+                                300.000
+                            </div>
+                        </div>
+
+                        <div class="book">
+                            <div class="img-cart">
+                                <img src="~/Content/image/hackerielts.png" alt="Sách 3">
+                            </div>
+                            <div>
+                                <h3 class="book-title">
+                                    <a style="text-decoration: none" href="~/Product/productBook3">Hackers Ielts Reading (Tái Bản)</a>
+                                </h3>
+                            </div>
+                            <div class="price">
+                                202.000 đ
+                                <span class="discount">-16%</span>
+                            </div>
+                            <div class="old-price">
+                                289.000
+                            </div>
+                        </div>
+
+                        <div class="book">
+                            <div class="img-cart">
+                                <img src="~/Content/image/muonkiepnhansinh_1.png" alt="Sách 4">
+                            </div>
+                            <div>
+                                <h3 class="book-title">
+                                    <a style="text-decoration: none" href="~/Product/productBook4">Muôn Kiếp Nhân Sinh - Many Times, Many Lives</a>
+                                </h3>
+                            </div>
+                            <div class="price">
+                                122.640 đ
+                                <span class="discount">-16%</span>
+                            </div>
+                            <div class="old-price">
+                                168.000
+                            </div>
+                        </div>
+
+                        <div class="book">
+                            <div class="img-cart">
+                                <img src="~/Content/image/muonkiepnhansinh_1.png" alt="Sách 4">
+                            </div>
+                            <div>
+                                <h3 class="book-title">
+                                    <a style="text-decoration: none" href="~/Product/productBook4">Muôn Kiếp Nhân Sinh - Many Times, Many Lives</a>
+                                </h3>
+                            </div>
+                            <div class="price">
+                                122.640 đ
+                                <span class="discount">-16%</span>
+                            </div>
+                            <div class="old-price">
+                                168.000
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script>
+            // Đặt thời gian bắt đầu flash sale (ví dụ 1 tiếng)
+            const duration = 60 * 60; // 1 giờ = 3600 giây
+            let timeRemaining = duration;
+
+            function updateCountdown() {
+                const hours = Math.floor(timeRemaining / 3600);
+                const minutes = Math.floor((timeRemaining % 3600) / 60);
+                const seconds = timeRemaining % 60;
+
+                // Cập nhật nội dung của đồng hồ đếm ngược
+                document.getElementById("countdown").innerText =
+                    `FLASH SALE Bắt đầu trong ${String(hours).padStart(2, '0')}:${String(minutes).padStart(2, '0')}:${String(seconds).padStart(2, '0')}`;
+
+                // Thêm lại phần tử doimau vào bên trong countdown
+                document.getElementById("countdown").innerHTML +=
+                    '<span id="doimau" style="float:right">Xem tất cả > </span>';
+
+                // Nếu hết thời gian, dừng đếm ngược và hiển thị thông báo
+                if (timeRemaining <= 0) {
+                    clearInterval(countdownInterval);
+                    document.getElementById("countdown").innerText = "FLASH SALE đã bắt đầu!";
+                    document.getElementById("countdown").innerHTML +=
+                        '<span id="doimau" style="float:right">Xem tất cả > </span>'; // Thêm lại phần tử doimau
+                } else {
+                    timeRemaining--;
+                }
+            }
+
+            // Cập nhật đồng hồ đếm ngược mỗi giây
+            const countdownInterval = setInterval(updateCountdown, 1000);
+            updateCountdown(); // Gọi hàm lần đầu tiên để hiển thị ngay lập tức
+        </script>
+        <!--********************PHẦN XU HƯỚNG MUA SẮM********************-->
+        <div class="shopping">
+            <div class="shopping-item">
+                <div class="tab-slider">
+                    <div class="nentrangxuhuong">
+                        <div class="icon">
+                            <img src="https://cdn0.fahasa.com/media/wysiwyg/icon-menu/icon_dealhot_new.png" alt="">
+                            <span>XU HƯỚNG MUA SẮM</span>
+                        </div>
+                    </div>
+                    <div class="table-title">
+                        <div class="table-title-header">
+                            <span class="xuhuongtheongay"> Xu Hướng Theo Ngày</span>
+                            <hr>
+                        </div>
+                    </div>
+                    <div class="tab-container">
+                        <div class="item-cart">
+                            <div class="img-cart">
+                                <img src="https://cdn0.fahasa.com/media/catalog/product/c/o/cover-1440-1-9549.jpg"
+                                     alt="">
+                            </div>
+                            <div>
+                                <h3 class="name">
+                                    <a style="text-decoration: none" href="~/Product/productsbook1">Hoa hoc tro - So 1140</a>
+                                </h3>
+                            </div>
+                            <div class="table-price">
+                                <div class="price">
+                                    19.000d
+                                    <span class="discount">-16%</span>
+                                </div>
+                                <div class="old-price">
+                                    20.000d
+                                </div>
+                            </div>
+                            <div class="total" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100">
+                                <span class="587620-bar">Sắp hết</span>
+                            </div>
+                        </div>
+                        <div class="item-cart">
+                            <div class="img-cart">
+                                <img src="https://cdn0.fahasa.com/media/catalog/product/n/e/nexus-b_a-m_m_1.jpg"
+                                     alt="">
+                            </div>
+                            <div>
+                                <h3 class="name">
+                                    <a style="text-decoration: none" href="~/Product/productsbook2">Nexus - Lược Sử Của Những Mạng Lưới Thông Tin...</a>
+                                </h3>
+                            </div>
+                            <div class="table-price">
+                                <div class="price">
+                                    260.000d
+                                    <span class="discount">-16%</span>
+                                </div>
+                                <div class="old-price">
+                                    325.000d
+                                </div>
+                            </div>
+                            <div class="total" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100">
+                                <span class="587620-bar">Sắp hết</span>
+                            </div>
+                        </div>
+                        <div class="item-cart">
+                            <div class="img-cart">
+                                <img src="https://cdn0.fahasa.com/media/catalog/product/b/_/b_a-1-25-_-_m_1.jpg"
+                                     alt="">
+                            </div>
+                            <div>
+                                <h3 class="name">
+                                    <a style="text-decoration: none" href="~/Product/productsbook3">25 Độ Âm</a>
+                                </h3>
+                            </div>
+                            <div class="table-price">
+                                <div class="price">
+                                    126.400d
+                                    <span class="discount">-16%</span>
+                                </div>
+                                <div class="old-price">
+                                    158.000d
+                                </div>
+                            </div>
+                            <div class="total" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100">
+                                <span class="587620-bar">Sắp hết</span>
+                            </div>
+                        </div>
+                        <div class="item-cart">
+                            <div class="img-cart">
+                                <img src="https://cdn0.fahasa.com/media/catalog/product/u/n/untitled-2_28.jpg"
+                                     alt="">
+                            </div>
+                            <div>
+                                <h3 class="name">
+                                    <a style="text-decoration: none" href="~/Product/productsbook4">Lịch Sử Việt Nam Bằng Hình - Bìa Cứng - Tặng Kèm 1 Bookmark + 4 Postcard</a>
+                                </h3>
+                            </div>
+                            <div class="table-price">
+                                <div class="price">
+                                    738.000d
+                                    <span class="discount">-16%</span>
+                                </div>
+                                <div class="old-price">
+                                    900.000d
+                                </div>
+                            </div>
+                            <div class="total" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100">
+                                <span class="587620-bar">Sắp hết</span>
+                            </div>
+                        </div>
+                        <div class="item-cart">
+                            <div class="img-cart">
+                                <img src="https://cdn0.fahasa.com/media/catalog/product/n/g/ngay-xua-co-mot-chuyen-tinh---poster-_-postcard.jpg"
+                                     alt="">
+                            </div>
+                            <div>
+                                <h3 class="name">
+                                    <a>Ngày Xưa Có Một Chuyện Tình - Khổ Thường - Bìa Hồng - Tặng Kèm...</a>
+                                </h3>
+                            </div>
+                            <div class="table-price">
+                                <div class="price">
+                                    108.000d
+                                    <span class="discount">-16%</span>
+                                </div>
+                                <div class="old-price">
+                                    135.000d
+                                </div>
+                            </div>
+                            <div class="total" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100">
+                                <span class="587620-bar">Sắp hết</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-container">
+                        <div class="item-cart">
+                            <div class="img-cart">
+                                <img src="https://cdn0.fahasa.com/media/catalog/product/u/n/untitled-1_27.jpg"
+                                     alt="">
+                            </div>
+                            <div>
+                                <h3 class="name">
+                                    <a>Hoa hoc tro - So 1124</a>
+                                </h3>
+                            </div>
+                            <div class="table-price">
+                                <div class="price">
+                                    226.000d
+                                    <span class="discount">-16%</span>
+                                </div>
+                                <div class="old-price">
+                                    252.000d
+                                </div>
+                            </div>
+                            <div class="total" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100">
+                                <span class="587620-bar">Sắp hết</span>
+                            </div>
+                        </div>
+                        <div class="item-cart">
+                            <div class="img-cart">
+                                <img src="https://cdn0.fahasa.com/media/catalog/product/9/7/9780399590528.jpg"
+                                     alt="">
+                            </div>
+                            <div>
+                                <h3 class="name">
+                                    <a>Educated: A Memoir (New York Times Bestseller)</a>
+                                </h3>
+                            </div>
+                            <div class="table-price">
+                                <div class="price">
+                                    241.000d
+                                    <span class="discount">-16%</span>
+                                </div>
+                                <div class="old-price">
+                                    258.000d
+                                </div>
+                            </div>
+                            <div class="total" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100">
+                                <span class="587620-bar">Sắp hết</span>
+                            </div>
+                        </div>
+                        <div class="item-cart">
+                            <div class="img-cart">
+                                <img src="https://cdn0.fahasa.com/media/catalog/product/u/n/untitled-2_25.jpg"
+                                     alt="">
+                            </div>
+                            <div>
+                                <h3 class="name">
+                                    <a>Combo Manga - Haikyu!!: Tập 1 - 45 (Bộ 45 Tập)</a>
+                                </h3>
+                            </div>
+                            <div class="table-price">
+                                <div class="price">
+                                    260.000d
+                                    <span class="discount">-16%</span>
+                                </div>
+                                <div class="old-price">
+                                    325.000d
+                                </div>
+                            </div>
+                            <div class="total" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100">
+                                <span class="587620-bar">Sắp hết</span>
+                            </div>
+                        </div>
+                        <div class="item-cart">
+                            <div class="img-cart">
+                                <img src="https://cdn0.fahasa.com/media/catalog/product/8/9/8935339408253.jpg"
+                                     alt="">
+                            </div>
+                            <div>
+                                <h3 class="name">
+                                    <a>Đồ Chơi Lắp Ráp Hero Infinity - Model Kit - Armor Version 11...</a>
+                                </h3>
+                            </div>
+                            <div class="table-price">
+                                <div class="price">
+                                    260.000d
+                                    <span class="discount">-16%</span>
+                                </div>
+                                <div class="old-price">
+                                    325.000d
+                                </div>
+                            </div>
+                            <div class="total" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100">
+                                <span class="587620-bar">Sắp hết</span>
+                            </div>
+                        </div>
+                        <div class="item-cart">
+                            <div class="img-cart">
+                                <img src="https://cdn0.fahasa.com/media/catalog/product/8/9/8934986012189.jpg"
+                                     alt="">
+                            </div>
+                            <div>
+                                <h3 class="name">
+                                    <a>Tập Vẽ Lò Xo A4 - Sketchbook Van Gogh Inspire - Starry Nightlife...</a>
+                                </h3>
+                            </div>
+                            <div class="table-price">
+                                <div class="price">
+                                    260.000d
+                                    <span class="discount">-16%</span>
+                                </div>
+                                <div class="old-price">
+                                    325.000d
+                                </div>
+                            </div>
+                            <div class="total" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100">
+                                <span class="587620-bar">Sắp hết</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="btn"><a href="#">Xem Thêm</a></div>
+                </div>
+            </div>
+            <!--********************PHẦN TỦ SÁCH NỔI BẬT********************-->
+            <div class="shopping-item">
+                <div class="slider">
+                    <div class="nentrangtusach">
+                        <img src="https://cdn0.fahasa.com/skin/frontend/ma_vanese/fahasa/images/category/ico_sachtrongnuoc.svg" class="center">
+                        <span class="center">TỦ SÁCH NỔI BẬT</span>
+                    </div>
+                    <div class="swiper">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <img src="~/Content/image/attckontitan.png" alt="Sách 1">
+                                <p>Truyện tranh</p>
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="~/Content/image/hackerielts.png" alt="Sách 2">
+                                <p>Sách học ngoại ngữ</p>
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="~/Content/image/muonkiepnhansinh_1.png" alt="Sách 3">
+                                <p>Tư duy</p>
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="~/Content/image/tamly.png" alt="Sách 4">
+                                <p>Tâm lý</p>
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="~/Content/image/vanhoc.png" alt="Sách 5">
+                                <p>Văn học</p>
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="~/Content/image/dautu.png" alt="Sách 6">
+                                <p>Đầu tư tương lai</p>
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="~/Content/image/nguyennhatanh.png" alt="Sách 7">
+                                <p>Nguyễn Nhật Ánh</p>
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="~/Content/image/demen.png" alt="Sách 8">
+                                <p>Truyện đọc cho bé</p>
+                            </div>
+                        </div>
+                        <div class="swiper-button-prev"></div>
+                        <div class="swiper-button-next"></div>
+                    </div>
+                    <script src="~/Scripts/fahasa/swiper.js"></script>
+                </div>
+            </div>
+
+            <!--******************** PHẦN BẢNG XẾP HẠNG BÁN CHẠY TUẦN ********************-->
+            <div class="tieudebxh">
+                <br />
+                <h1>Bảng xếp hạng bán chạy tuần</h1>
+            </div>
+            <div class="tabsbxh">
+                <button class="tabbxh active">Văn học</button>
+                <button class="tabbxh">Kinh Tế</button>
+                <button class="tabbxh">Tâm lý - Kỹ năng sống</button>
+                <button class="tabbxh">Thiếu nhi</button>
+                <button class="tabbxh">Sách học ngoại ngữ</button>
+                <button class="tabbxh">Foreign books</button>
+                <button class="tabbxh">Thể loại khác</button>
+            </div>
+            <div class="ctnbxh">
+                <div class="bhxleft">
+                    <div class="ranking-list">
+                        <ul>
+                            <li class="ranking-item">
+                                <span class="rank">01</span>
+                                <br />
+                                <p>↑</p>
+                                <img src="~/Content/image/01.png" alt="Góc Nhỏ Cô Nàng">
+                                <div class="details">
+                                    <p class="title">Góc Nhỏ Cô Nàng</p>
+                                    <p class="author">Little Rainbow</p>
+                                    <p class="points" style="color:dodgerblue">4334 điểm</p>
+                                </div>
+                            </li>
+                            <li class="ranking-item">
+                                <span class="rank">02</span>
+                                <br />
+                                <img src="~/Content/image/02.png" alt="Tô Bình Yên Về Hạnh Phúc">
+                                <div class="details">
+                                    <p class="title">Tô Bình Yên Về Hạnh Phúc</p>
+                                    <p class="author">Kulzsc</p>
+                                    <p class="points" style="color:dodgerblue">1837 điểm</p>
+                                </div>
+                            </li>
+                            <li class="ranking-item">
+                                <span class="rank">03</span>
+                                <img src="~/Content/image/03.png" alt="999 Lá Thư Gửi Cho Chính Mình - Tô Màu Cuộc Sống">
+                                <div class="details">
+                                    <p class="title">999 Lá Thư Gửi Cho Chính Mình - Tô Màu Cuộc Sống</p>
+                                    <p class="author">Miêu Công Tử, Hà Trang (Tahtag)</p>
+                                    <p class="points" style="color:dodgerblue">1727 điểm</p>
+                                </div>
+                            </li>
+                            <li class="ranking-item">
+                                <span class="rank">04</span>
+                                <img src="~/Content/image/04.png" alt="Doraemon - Tiểu Thuyết - Nobita Và Bản Giao Hưởng Địa Cầu">
+                                <div class="details">
+                                    <p class="title">Doraemon - Tiểu Thuyết - Nobita Và Bản Giao Hưởng Địa Cầu</p>
+                                    <p class="author">Fujiko F Fujio , Teruko Utsumi, Kazuaki Imai</p>
+                                    <p class="points" style="color:dodgerblue">1260 điểm</p>
+                                </div>
+                            </li>
+                            <li class="ranking-item">
+                                <span class="rank">05</span>
+                                <img src="~/Content/image/05.png" alt="Trốn Lên Mái Nhà Để Khóc">
+                                <div class="details">
+                                    <p class="title">Trốn Lên Mái Nhà Để Khóc</p>
+                                    <p class="author">Lam</p>
+                                    <p class="points" style="color:dodgerblue">1210 điểm</p>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="bxh-vertical-line"></div> <!-- Đường thẳng dọc -->
+                <div class="bxhright">
+                    <div class="book-details">
+                        <img src="~/Content/image/sachtomau.png" alt="Góc Nhỏ Cô Nàng">
+                        <div class="info">
+                            <p class="intosgk">Góc Nhỏ Có Nàng</p>
+                            <p class="description">
+                                Tác giả: Little Rainbow <br>
+                                Nhà xuất bản: Thanh Niên
+                            </p>
+                            <p class="intosgk">57,120 đ</p>
+                            <p><b class="old-price1">68,000 đ</b><span class="discount">-16%</span></p>
+
+                            <p class="description">
+                                <c class="c">Góc Nhỏ Có Nắng</c>
+                                <br />
+                                - Với 30 chủ đề tô màu phong phú đa dạng, mỗi bức tranh như là một lời thủ thỉ tâm tình gửi đến bạn
+                                <br />
+                                - Thư giãn và chữa lành: Với những hình ảnh đẹp mắt và đơn giản, tô màu sẽ là một phương pháp hiệu quả giúp bạn chữa lành và nuôi dưỡng tâm hồn
+                                <br />
+                                - Khám phá sự sáng tạo: Bạn đừng ngại vẽ thêm, tô thêm màu sắc để thể hiện cảm xúc của riêng mình
+                                <br />
+                                - Chất liệu giấy dày, mịn, đẹp sẽ đem đến cho bạn trải nghiệm tô màu thú vị
+                                <br />
+                                ...
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <button class="more-btn">Xem thêm</button>
+        </div>
+    </div>
+</body>
+</html>
